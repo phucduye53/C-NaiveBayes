@@ -166,7 +166,7 @@ public:
 					{
 						int count = countAttributeInSubset(allAttributes.at(j).at(k), subset, j);
 						double conditionalProbability;
-						conditionalProbability = (double)count / subset.size();
+						conditionalProbability = ((double)count+1) / (subset.size()+classLabels.size()) ;
 						file << conditionalProbability << " ";
 					}
 					file << endl;
@@ -203,7 +203,7 @@ public:
 							continue;
 						}
 						int count = countAttributeInSubset(testData.at(i).att[k], subset, k);
-						conditionalProbability *= (double)count / subset.size();
+						conditionalProbability *= ((double)count+1) / (subset.size()+classLabels.size());
 					}
 					double newTotalProbability = conditionalProbability*priorProbability;
 					if (newTotalProbability>oldTotalProbability)
