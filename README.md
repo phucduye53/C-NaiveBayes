@@ -1,4 +1,4 @@
-## C-NaiveBayes
+## C-NaiveBayes - Laplace smoothing
 ### Homework | Visual Studio 13
 - Read [me][1] first .
 - This programe using command line parameter .
