@@ -122,7 +122,7 @@ public:
 			{
 				vector<Mushroom> subset = getSubset(UniqueAtt.at(j), indexOfClassLabel);
 				classSubsets.insert(pair<char, vector<Mushroom>>(UniqueAtt.at(j), subset)); // filter
-				classProbabilities.insert(pair<char, double>(UniqueAtt.at(j), (double)subset.size() / listData.size())); // = vector đã filter / listData
+				classProbabilities.insert(pair<char, double>(UniqueAtt.at(j), ((double)subset.size()+1) / (listData.size()+2))); // = vector đã filter / listData
 			}
 
 		
