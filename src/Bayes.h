@@ -92,7 +92,7 @@ public:
 	
 	void addAtt(vector<char> &temp,int &index) // thêm các giá trị riêng biệt vào các thuộc tính
 	{
-		temp.push_back(listData.at(index).att[0]);
+		temp.push_back(listData.at(0).att[index]);
 		int n = listData.size();
 
 		for (int i = 1; i < n; i++)
